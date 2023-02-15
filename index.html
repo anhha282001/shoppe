@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/mail.css">
+    <link rel="stylesheet" href="./asset/css/grid.css">
+    <link rel="stylesheet" href="./asset/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400, 500, 700&display=swap&subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid wide">
+                <div>
+                    <ul class="header__sort-bar ">
+                        <li class="header__sort-item">
+                            <a href="" class="header__sort-link ">Liên quan</a>
+                        </li>
+                        <li class="header__sort-item header__sort-item--active">
+                            <a href="" class="header__sort-link ">Mới nhất</a>
+                        </li>
+                        <li class="header__sort-item">
+                            <a href="" class="header__sort-link">Bán chạy</a>
+                        </li>
+                        <li class="header__sort-item">
+                            <a href="" class="header__sort-link">Giá</a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="header__navbar hide-on-mobile-tablet">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--saparate header__navbar-has-qr">
+                            Vào cửa hàng của HDK
+                            <div class="header__qr">
+                                <img src="./asset/img/qr_code.png" alt="" class="header__qr-img">
+                                <div class="head__qr-apps">
+                                    <a href="" class="header__qr-link">
+                                        <img src="./asset/img/ch_play.png" alt="ch_play" class="header__qr-download"></a>
+                                    <a href="" class="header__qr-link">
+                                        <img src="./asset/img/app_store.png" alt="app_store" class="header__qr-download"></a>  
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-item-no-pointer">Kết nối</span>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item-hasnotify">
+                            <a href="" class="header__navbar-link">
+                                <i class="header__navbar-icon far fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <div class="header__notify">
+                                <div class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </div>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./asset/img/sanpham/lap1.png" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Laptop ASUS ROG Strix G15 2021 G513IH-HN015W (R7-4800H/8GB RAM/512GB SSD/GTX 1650/Windows 11)</span>
+                                                <span class="header__notify-descriotion">Mô tả Laptop ASUS ROG Strix G15 2021 G513IH-HN015W</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./asset/img/sanpham/lap3.webp" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Laptop LG Gram 2021 14ZD90P G.AX51A5 (14" WUXGA/Intel Core i5-1135G7/8GB/256GB SSD/Free DOS/1kg)</span>
+                                                <span class="header__notify-descriotion">Mô tả Laptop LG Gram 2021 14ZD90P G.AX51A5</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./asset/img/sanpham/lap2.webp" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Laptop HP 340s G7 224L0PA (14" HD/Intel Core i3-1005G1/4GB/512GB SSD/Windows 10 Home SL 64-bit/1.3kg)</span>
+                                                <span class="header__notify-descriotion">Mô tả Laptop HP 340s G7 224L0PA</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">
+                                        Xem tất cả
+                                    </a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-link">
+                                <i class="header__navbar-icon far fa-question-circle"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <!-- <li class="header__navbar-item header__navbar-item--bold header__navbar-item--saparate">Đăng kí</li>
+                        <li class="header__navbar-item header__navbar-item--bold">Đăng nhập</li> -->
+                        <li class="header__navbar-item header__navbar-user">
+                                <img src="./asset/img/avata.jpg" alt="" class="header__navbar-user-img">
+                                <span class="header__navbar-user-name">Ha DK</span>
+                                <ul class="header__navbar-user-menu">
+                                    <li class="header__navbar-user-item">
+                                        <a href="">Tài khoản của tôi</a>
+                                    </li>
+                                    <li class="header__navbar-user-item">
+                                        <a href="">Địa chỉ của tôi</a>
+                                    </li>
+                                    <li class="header__navbar-user-item">
+                                        <a href="">Đơn mua</a>
+                                    </li>
+                                    <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                        <a href="">Đăng xuất</a>
+                                    </li>
+                                </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- tim kiếm -->
+                <div class="header-with-search">
+
+                    <div class="mobile-wrap"> 
+                        <label for="mobile-nav-checkbox" class="mobile-nav">
+                        <i class="fa fa-bars mobile-nav-icon"></i>
+                        </label>
+
+                        <input type="checkbox" hidden id="mobile-nav-checkbox" class="nav__mobile-checkbox">
+
+                        <label for="mobile-nav-checkbox" class="nav__overlay"></label>
+                        <nav class="nav-mobile">
+                        <label for="mobile-nav-checkbox" class="nav-mobile-close">
+                            <i class="fa fa-times"></i>
+                        </label>
+                        <ul class="nav-mobile-list">
+                            <li class="nav-mobile-item">
+                                <a href="" class="nav-mobile-link">Đăng nhâp</a>
+                            </li>
+                            <li class="nav-mobile-item">
+                                <a href="" class="nav-mobile-link">Cài đặt</a>
+                            </li>
+                            <li class="nav-mobile-item">
+                                <a href="" class="nav-mobile-link">Báo lỗi</a>
+                            </li>
+                        </ul>
+                        </nav>
+
+                        <label for="mobile-search-checkbox" class="header__mobile-search">
+                            <i class="header__mobile-search-icon fa fa-search"></i>
+                        </label>
+
+                        
+                    </div>
+                    <input type="checkbox" hidden id="mobile-search-checkbox" class="header__mobile-checkbox">
+                    <div class="header__logo hide-on-tablet">
+                        <a href="\" class="logo-link">
+                            <img src="http://storage.googleapis.com/ops-shopee-files-live/live/affiliate-blog/2019/05/logo-full-white.png" alt="" class="header__logo-img">
+                        </a>
+                    </div>
+
+                    
+
+                    <div class="header__search ">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Tìm kiếm">
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Bàn phím cơ</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Chuột không dây</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__search-select">
+                            <span class="header__search-select-lable">Trong shop</span>
+                            <i class="header__search-select-icon fas fa-angle-down"></i>
+
+                            <ul class="header__search-option">
+                                <li class="header__search-option-item">
+                                    <span>Trong shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                                <li class="header__search-option-item">
+                                    <span>Ngoài shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>
+                    </div>
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+                            <span class="header__cart-notice">3</span>
+                            <!-- no cart : header__cart-list-no-cart -->
+                            <div class="header__cart-list ">
+                                <img src="./asset/img/no-cart.png" alt="" class="header__cart-list-no-cart-img">
+                                <span class="header__cart-list-no-cart-msg">Chưa có sản phẩm</span>
+
+                                <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                <ul class="header__cart-list-item">
+                                    <li class="header__cart-item">
+                                        <img src="./asset/img/sanpham/banphim1.jpg" alt="" class="header__cart-item-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Bán bàn phím BenCom R828 </h5>
+                                                <div class="head__cart-item-frice-wrap">
+                                                    <span class="header__cart-item-price">350.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">Xếp hạng : Bạc</span>
+                                                <span class="header__cart-item-delete">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./asset/img/sanpham/banphim2.jpg" alt="" class="header__cart-item-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Bán bàn phím BenCom R828 </h5>
+                                                <div class="head__cart-item-frice-wrap">
+                                                    <span class="header__cart-item-price">350.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">Xếp hạng : Bạc</span>
+                                                <span class="header__cart-item-delete">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./asset/img/sanpham/banphim3.jpg" alt="" class="header__cart-item-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Bán bàn phím BenCom R828 </h5>
+                                                <div class="head__cart-item-frice-wrap">
+                                                    <span class="header__cart-item-price">350.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">Xếp hạng : Bạc</span>
+                                                <span class="header__cart-item-delete">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                 <a class="btn btn--primari header__cart-view">Xem giỏ hàng</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </header>
+        <div class="app__container">
+            <div class="grid wide">
+                <div class="row sm-gutter app__content">
+                    <div class="col l-2 m-0 c-0">
+                        <nav class="category">
+                            <h3 class="category__heading">
+                                <i class="category__heading-icon fas fa-list"></i>
+                                Danh mục
+                            </h3>
+                            <ul class="category-list">
+                                <li class="category-item category-item--active">
+                                    <a href="#" class="category-item__link">Sản phẩm</a>
+                                </li>
+                                <li class="category-item ">
+                                    <a href="#" class="category-item__link">Bàn phím cơ</a>
+                                </li>
+                                <li class="category-item ">
+                                    <a href="#" class="category-item__link">Chuột không dây</a>
+                                </li>
+                                <li class="category-item ">
+                                    <a href="#" class="category-item__link">Laptop văn phòng</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col l-10 m-12 c-12">
+                        <div class="home-filter hide-on-mobile-tablet">
+                            <span class="home-filter__lable">Sắp xếp theo</span>
+                            <button class="home-filter-btn btn">Phổ biến</button>
+                            <button class="home-filter-btn btn btn--primari">Mới nhất</button>
+                            <button class="home-filter-btn btn">bán chạy</button>
+                            <div class="input__select">
+                                <span class="input__select-lable">Giá</span>
+                                <i class="input__select-icon fas fa-angle-down"></i>
+                                <ul class="input__select-list">
+                                    <li class="input__select-item">
+                                        <a href="" class="input__select-link">Giá : Thấp đến cao</a>
+                                       
+                                    </li>
+                                    <li class="input__select-item">
+                                     
+                                        <a href="" class="input__select-link">Giá : Cao đến thấp</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num">
+                                    <span class="home-filter__page-current">1</span>/14
+                                </span>
+                                <div class="home-filter__page-control">
+                                    <a href="" class="home-filter__page-btn home-filter__page-btn--dis">
+                                        <i class="home-filter__page-icon fas fa-angle-left"></i>
+                                    </a>
+                                    <a href="" class="home-filter__page-btn">
+                                        <i class="home-filter__page-icon fas fa-angle-right"></i>
+                                    </a>
+                                </div>    
+                            </div>
+                        </div>
+
+                        <nav class="mobie-category">
+                            <ul class="mobie-category__list">
+                                <li class="mobie-category__item">
+                                    <a href="" class="mobie-category__link">phụ kiên, linh kiện laptop - pc  </a>
+                                </li>
+                                <li class="mobie-category__item">
+                                    <a href="" class="mobie-category__link">Laptop gaming giá rẻ </a>
+                                </li>
+                                <li class="mobie-category__item">
+                                    <a href="" class="mobie-category__link">Laptop văn phòng </a>
+                                </li>
+                                <li class="mobie-category__item">
+                                    <a href="" class="mobie-category__link">Laptop cũ - pc giá rẻ </a>
+                                </li>
+                                <li class="mobie-category__item">
+                                    <a href="" class="mobie-category__link">linh kiện Laptop cũ giá rẻ </a>
+                                </li>
+                                <li class="mobie-category__item">
+                                    <a href="" class="mobie-category__link">phụ kiên, linh kiện laptop - pc </a>
+                                </li>
+                                <li class="mobie-category__item">
+                                    <a href="" class="mobie-category__link">Laptop gaming giá rẻ</a>
+                                </li>
+                                <li class="mobie-category__item">
+                                    <a href="" class="mobie-category__link">Laptop văn phòng </a>
+                                </li>
+                                <li class="mobie-category__item">
+                                    <a href="" class="mobie-category__link">Laptop cũ - pc giá rẻ </a>
+                                </li>
+                                <li class="mobie-category__item">
+                                    <a href="" class="mobie-category__link">linh kiện Laptop cũ giá rẻ </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="home-product">
+                            <div class="row sm-gutter">
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./asset/img/sanpham/lap1.png) "></div>
+                                        <h5 class="home-product-item__name">Laptop ASUS ROG Strix G15 2021 G513IH-HN015W (R7-4800H/8GB RAM/512GB SSD/GTX 1650/Windows 11)</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">16.590.000đ</span>
+                                            <span class="home-product-item__price-current">15.449.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">3 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">ASUS</span>
+                                            <span class="home-product-item__origin-name">Việt Nam</span>
+                                        </div>
+                                        <div class="home-product-item__favoutite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale">
+                                            <span class="home-product-item__sale-percent">10%</span>
+                                            <span class="home-product-item__sale-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./asset/img/sanpham/lap2.png) "></div>
+                                        <h5 class="home-product-item__name">
+                                            Laptop Dell Latitude 3420 42LT342001 (Core i3-1115G4 | 4GB | 256GB | Intel UHD | 14.0 inch HD | Fedora | Đen)
+                                          </h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">10.590.000đ</span>
+                                            <span class="home-product-item__price-current">9.449.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">3 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">DELL</span>
+                                            <span class="home-product-item__origin-name">Việt Nam</span>
+                                        </div>
+                                        <div class="home-product-item__favoutite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale">
+                                            <span class="home-product-item__sale-percent">10%</span>
+                                            <span class="home-product-item__sale-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./asset/img/sanpham/lap3.jpg) "></div>
+                                        <h5 class="home-product-item__name">ProArt Studiobook Máy Tính Xách Tay Cá Nhân ASUS Việt Nam</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">19.590.000đ</span>
+                                            <span class="home-product-item__price-current">18.449.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">3 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">APPLE</span>
+                                            <span class="home-product-item__origin-name">Việt Nam</span>
+                                        </div>
+                                        <div class="home-product-item__favoutite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale">
+                                            <span class="home-product-item__sale-percent">10%</span>
+                                            <span class="home-product-item__sale-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./asset/img/sanpham/pc1.jpg) "></div>
+                                        <h5 class="home-product-item__name">Máy Tính Để Bàn Văn Phòng S88 VPAS-G6405 (Intel Pentium G6405)</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">13.590.000đ</span>
+                                            <span class="home-product-item__price-current">12.449.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">3 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">MIX </span>
+                                            <span class="home-product-item__origin-name">Việt Nam</span>
+                                        </div>
+                                        <div class="home-product-item__favoutite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale">
+                                            <span class="home-product-item__sale-percent">10%</span>
+                                            <span class="home-product-item__sale-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./asset/img/sanpham/pc2.jpg) "></div>
+                                        <h5 class="home-product-item__name">Máy Tính All In One Dell OptiPlex 7470 AIO 99% - Intel Core i5</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">13.590.000đ</span>
+                                            <span class="home-product-item__price-current">11.449.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">3 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">DELL</span>
+                                            <span class="home-product-item__origin-name">Việt Nam</span>
+                                        </div>
+                                        <div class="home-product-item__favoutite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale">
+                                            <span class="home-product-item__sale-percent">10%</span>
+                                            <span class="home-product-item__sale-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./asset/img/sanpham/tainghe1.jpg) "></div>
+                                        <h5 class="home-product-item__name">[Mới 100% No-box] Tai Nghe Asus ROG Strix 2.0</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">17.590.000đ</span>
+                                            <span class="home-product-item__price-current">15.449.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">3 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">ASUS</span>
+                                            <span class="home-product-item__origin-name">Việt Nam</span>
+                                        </div>
+                                        <div class="home-product-item__favoutite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale">
+                                            <span class="home-product-item__sale-percent">10%</span>
+                                            <span class="home-product-item__sale-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./asset/img/sanpham/lap5.jpg) "></div>
+                                        <h5 class="home-product-item__name">[Mới 100% Full box] Laptop Dell Gaming G15 5515 P105F004CGR 2021 - AMD Ryzen 5</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">16.590.000đ</span>
+                                            <span class="home-product-item__price-current">14.449.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">3 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">DELL</span>
+                                            <span class="home-product-item__origin-name">Việt Nam</span>
+                                        </div>
+                                        <div class="home-product-item__favoutite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale">
+                                            <span class="home-product-item__sale-percent">10%</span>
+                                            <span class="home-product-item__sale-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./asset/img/sanpham/chuoi4.jpg) "></div>
+                                        <h5 class="home-product-item__name">Chuột game không dây Steelseries Aerox 3 Snow (USB/RGB) (62608)</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">590.000đ</span>
+                                            <span class="home-product-item__price-current">449.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">3 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">ASUS</span>
+                                            <span class="home-product-item__origin-name">Việt Nam</span>
+                                        </div>
+                                        <div class="home-product-item__favoutite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale">
+                                            <span class="home-product-item__sale-percent">10%</span>
+                                            <span class="home-product-item__sale-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./asset/img/sanpham/mayin1.jpg) "></div>
+                                        <h5 class="home-product-item__name">Máy in đa chức năng HP LaserJet MFP M236sdw (9YG09A)</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">7.590.000đ</span>
+                                            <span class="home-product-item__price-current">6.449.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">3 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">HP</span>
+                                            <span class="home-product-item__origin-name">Việt Nam</span>
+                                        </div>
+                                        <div class="home-product-item__favoutite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale">
+                                            <span class="home-product-item__sale-percent">10%</span>
+                                            <span class="home-product-item__sale-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./asset/img/sanpham/manhinh1.jpg) "></div>
+                                        <h5 class="home-product-item__name">Màn hình Gigabyte G32QCA-EK (31.5 inch/2K/VA/165Hz/1ms/350 nits/HDMI+DP/Cong)</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">16.590.000đ</span>
+                                            <span class="home-product-item__price-current">15.449.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="home-product-item__rating-star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">3 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">GIGABYTE</span>
+                                            <span class="home-product-item__origin-name">Việt Nam</span>
+                                        </div>
+                                        <div class="home-product-item__favoutite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale">
+                                            <span class="home-product-item__sale-percent">10%</span>
+                                            <span class="home-product-item__sale-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <ul class="pagination home-product-pagination">
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__lick">
+                                    <i class="pagination-item__icon fas fa-angle-left"></i>
+                                </a>
+                            </li>
+                            <li class="pagination-item pagination-item--active">
+                                <a href="" class="pagination-item__lick"> 1</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__lick"> 2</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__lick"> 3</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__lick"> 4</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__lick"> 5</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__lick"> ...</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__lick"> 14</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__lick">
+                                    <i class="pagination-item__icon fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="grid wide footer-mobile">
+                <div class="row">
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer-heading">
+                            Chăm sóc khách hàng
+                        </h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">HDK-shop mall</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Hướng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer-heading">
+                           Giới thiệu
+                        </h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Giới thiệu</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Tuyển dụng</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Điều khoản</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer-heading">
+                            Danh mục
+                        </h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Giới thiệu</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Tuyển dụng</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Điều khoản</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer-heading">
+                            Theo dõi
+                        </h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">
+                                    <i class="footer__item-icon fab fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">
+                                    <i class="footer__item-icon fab fa-instagram"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">
+                                    <i class="footer__item-icon fab fa-linkedin"></i>
+                                    Linkedin
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-8 c-12">
+                        <h3 class="footer-heading">
+                            Cửa hàng trên các ứng dụng
+                        </h3>
+                        <div class="footer__dowload">
+                            <img src="./asset/img/qr_code.png" alt="Dowload QR" class="footer__dowload-qr-code">
+                            <div class="footer__dowload-apps">
+                                <a href="" class="footer__dowload-apps-link"> 
+                                    <img src="./asset/img/ch_play.png" alt="Ch-play" class="footer__dowload-apps-img">
+                                </a>
+                                <a href="" class="footer__dowload-apps-link"> 
+                                <img src="./asset/img/app_store.png" alt="App-store" class="footer__dowload-apps-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="footer__body ">
+
+                            <div class="footer__body-list ">
+                                <a href="" class="footer__body-link">Chính sách bảo mật</a>
+                                <a href="" class="footer__body-link">Quy chế hoạt động</a>
+                                <a href="" class="footer__body-link">Chính sách vận chuyển</a>
+                                <a href="" class="footer__body-link">Chính sách đổi trả</a>
+                            </div>
+            </div>
+                    <div class="footer__body-register">
+                        <img src="./asset/img/dangki.png" alt="" class="footer__body-register-img">
+                        <span class="footer__body-register-lable">Công ty TNHH HaDK</span>
+                    </div>
+                    <p class="footer__body-license">Bản quyền thuộc về công ty CNHH HaDK</p>
+                
+
+                     
+
+        </footer>
+    </div>
+    <!---------------------- modal ------------------------>
+     <!-- <div class="modal">
+        <div class="modal__overlay">
+
+        </div>
+        <div class="modal__body"> -->
+            
+            <!-- dn-dn -->
+            <!-- <div class="auth-form">
+
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng kí</h3>
+                        <span class="auth-form__switch-btn">Đăng nhập</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="password">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại password">
+                        </div>
+                    </div>
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">Bằng việc đăng kí bạn đã đồng ý với HDKshop về                       
+                                <a href="" class="auth-form__text-link">điều khoản dịch vụ</a>&
+                                <a href="" class="auth-form__text-link">chính sách và bảo mật</a>
+                        </p>
+
+                    </div>
+                    <div class="auth-form__controls">
+                        <button class="btn auth-form__controls-back btn--normal">TRỞ LẠI</button>
+                        <button class="btn btn--primari">Đăng kí</button>
+                    </div>
+                </div>
+                <div class="auth-form__socials">
+                    <a href="" class="btn btn--size-s auth-form__socials-fb btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                        <span class="auth-form__socials--title">
+                            Kết nối với facebook  
+                        </span>
+                    </a>
+                    <a href="" class="btn btn--size-s auth-form__socials-gg btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-google"></i>
+                        <span class="auth-form__socials--title">
+                            Kết nối với google 
+                        </span>
+                    </a>
+                </div>
+            </div>  -->
+            <!-- <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <span class="auth-form__switch-btn">Đăng kí</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="password">
+                        </div>
+                        
+                    </div>
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__help-link auth-form__help-forgot">Quyên mật khẩu</a>
+                            <span class="auth-form__help-separate"></span>
+                            <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                        </div>
+
+                    </div>
+                    <div class="auth-form__controls">
+                        <button class="btn auth-form__controls-back btn--normal">TRỞ LẠI</button>
+                        <button class="btn btn--primari">Đăng Nhập</button>
+                    </div>
+                </div>
+                <div class="auth-form__socials">
+                    <a href="" class="btn btn--size-s auth-form__socials-fb btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                        <span class="auth-form__socials--title">
+                            Kết nối với facebook  
+                        </span>
+                    </a>
+                    <a href="" class="btn btn--size-s auth-form__socials-gg btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-google"></i>
+                        <span class="auth-form__socials--title">
+                            Kết nối với google 
+                        </span>
+                    </a>
+                </div>
+            </div>  -->
+        <!-- </div>
+    </div> -->
+</body>
+</html>
